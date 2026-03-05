@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake and Ladder Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Snake and Ladder</h1>
+    <p class="subtitle">First to reach 100 wins.</p>
+
+    <section class="game-area">
+      <div id="board" class="board" aria-label="Snake and Ladder board"></div>
+
+      <aside class="panel">
+        <div class="status-row">
+          <strong>Current Turn:</strong>
+          <span id="current-player">Player 1</span>
+        </div>
+        <div class="status-row">
+          <strong>Dice Roll:</strong>
+          <span id="dice-value">-</span>
+        </div>
+
+        <ul class="players" id="player-status"></ul>
+
+        <button id="roll-btn" type="button">Roll Dice</button>
+        <button id="reset-btn" type="button" class="secondary">Reset Game</button>
+
+        <p id="message" class="message">Click "Roll Dice" to start.</p>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
